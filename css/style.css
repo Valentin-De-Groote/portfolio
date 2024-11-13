@@ -1,0 +1,27 @@
+.btn-outline-primary {
+    background-color: bisque;
+    
+}
+.carousel-half {
+    height: 50vh;
+}
+.carousel-half .carousel-item {
+    height: 100%;
+}
+.carousel-half img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px auto;
+}
+.container-bio {
+    max-width: 600px;
+    text-align: center;
+    margin-top: 50%;
+}

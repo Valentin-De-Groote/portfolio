@@ -1,0 +1,11 @@
+.btn-outline-primary {
+    background-color: bisque;
+    
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+
+}

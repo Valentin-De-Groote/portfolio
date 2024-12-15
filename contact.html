@@ -90,45 +90,98 @@
           </div>
           <hr>
 
-          <form name"contact" method="POST"  data-netlify="true">
-            <fieldset class="row g-3 mb-3">
-              <legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
-              <div class="col-md-6">
-                <label for="firstName" class="form-label">voornaam <span>*</span></label>
-                <input type="text" class="form-control" id="firstName" placeholder="Vul je voornaam in" required>
-              </div>
-              <div class="col-md-6">
-                <label for="lastName" class="form-label">achternaam <span>*</span></label>
-                <input type="text" class="form-control" id="lastName" placeholder="Vul je achternaam in" required>
-              </div>
-              <div class="col">
-                <label for="mobile" class="form-label">Telefoonnummer <span>*</span></label>
-                <input type="tel" class="form-control" id="phone"  required="required" data-validation-required-message="Vul je telefoonnummer in."
-            
-                  placeholder="+32 234 567 890">
-              </div>
-              <div class="col">
-                <label for="subject" class="form-label">Onderwerp</label>
-                <input type="text" class="form-control" id="subject" placeholder="Typ het onderwerp">
-              </div>
-              <div class="mb-3">
-                <label for="emailAddress" class="form-label">Email address <span>*</span></label>
-                <input type="email" class="form-control" id="email" placeholder="naam@voorbeeld.com" required>
-              </div>
-              <div class="mb-3">
-                <label for="comments" class="form-label">Opmerkingen</label>
-                <textarea class="form-control" id="comments" rows="5"></textarea>
-              </div>
-            </fieldset>
+         <div class="row">
+            <form method='POST' name='contact'>
+              <input type="hidden" name="form-name" value="contact" />
 
-            
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">verzenden</button>
-            </div>
-          </form>
+              <fieldset class="row">
+                <legend class="visually-hidden">Contactgegevens</legend>
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Naam</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Vul je naam in"
+                    required
+                  />
+                  <p class="invalid-feedback">Naam is verplicht.</p>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastname" class="form-label">Achternaam</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Vul je achternaam in"
+                    required
+                  />
+                  <p class="invalid-feedback">Achternaam is verplicht.</p>
+                </div>
+              </fieldset>
 
+              <fieldset class="row">
+                <legend class="visually-hidden">Contactmethoden</legend>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Vul je e-mailadres in"
+                    required
+                  />
+                  <p class="invalid-feedback">
+                    Vul een geldig e-mailadres in.
+                  </p>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="subject" class="form-label">Onderwerp</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    placeholder="Typ het onderwerp"
+                    required
+                  />
+                  <p class="invalid-feedback">Onderwerp is verplicht.</p>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend class="visually-hidden">Bericht</legend>
+                <label for="message" class="form-label">Bericht</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  placeholder="Typ je bericht hier"
+                  required
+                  rows="5"
+                ></textarea>
+                <p class="invalid-feedback">Bericht mag niet leeg zijn.</p>
+              </fieldset>
+
+              <br />
+              <button class="btn btn-primary w-10" type="submit">
+                Verstuur
+              </button>
+
+              <p class="small text-muted">
+                <br />
+                We respecteren je privacy en zullen je informatie enkel
+                gebruiken om je bericht te beantwoorden. Je gegevens worden
+                niet gedeeld met derden.
+              </p>
+            </form>
+          </article>
         </section>
       </main>
+       
 
 
         <aside class="col-md-3 border-start  ps-6">

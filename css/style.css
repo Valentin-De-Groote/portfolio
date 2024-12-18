@@ -9,24 +9,3 @@
     z-index: 2000;
 
 }
-/* Algemene afbeelding stijl */
-img {
-    border-radius: 8px; /* Maakt hoeken afgerond */
-  }
-  
-  /* Specifieke stijl voor de profielfoto */
-  img.rounded {
-    max-width: 80%; /* Zorgt dat de afbeelding niet breder wordt dan 80% van de container */
-    height: auto; /* Houdt de originele verhoudingen */
-    object-fit: cover; /* Zorgt dat de afbeelding mooi bijgesneden wordt indien nodig */
-    max-height: 350px; /* Limiteert de hoogte van de afbeelding */
-  }
-  
-  /* Mobiele apparaten */
-  @media (max-width: 768px) {
-    img.rounded {
-      max-width: 100%; /* Op kleinere schermen neemt de afbeelding de volledige breedte in */
-      max-height: 300px; /* Beperkt de hoogte voor kleinere schermen */
-    }
-  }
-  
